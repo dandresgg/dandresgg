@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="icon" type="imag/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div>
+                <figure class="logo">
+                    <img src="https://img.icons8.com/ios/50/ffffff/integrated-circuit.png">
+                </figure>
+            </div>
+            <ol>
+                <li>
+                    <a class="link-internal" href="#portafolio">Portafolio</a>
+                </li>
+                <!-- <li>
+                    <a class="link-internal" href="#experiencia">Experiencia</a>
+                </li> -->
+                <li>
+                    <a class="link-internal" href="#trabajemos">Trabajemos Juntos</a>
+                </li>
+            </ol>
+        </div>
+    </header>
+  <section class="hero">
+        <div class="container">
+            <h1>
+                Hola soy <strong> Diego Gomez </strong ><br> Ingeniero <strong> Electrónico
+            </strong></br> con Pasión por <strong>Aprender</strong>
+            </h1>
+            <img class="hero-image" src="images/hero.png" width="250" height="250" alt="Imagen hero">
+        </div>
+
+    </section> 
+
+    <div class="container">
+        <h2 class="event-list-title">Portafolio</h2>
+        <div class="event1">
+        </div>
+        <section id="portafolio" class="portfolio">
+            <div class="project-details">
+                <article class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">Tumores del Futbol</h3>
+                        <h6 class="project-course">Django / BootStrap / PostgreSql / Python / Git / Heroku</h6>
+                        <p class="project-date">
+                            </canvas><small><strong>Fecha:</strong> 04/02/2020</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en:</strong> 
+                            <a href="https://lit-reef-12011.herokuapp.com" target="_blank">
+                                https://lit-reef-120project-text11.herokuapp.com/ </a></small></p>
+                        <p class="project-description">Sitio web pensado en ser una red social orientada en hacer apuestas enfocadas en las conocidas pollas para que las personas puedan disfrutar del fútbol(u otro deporte), incluso si no eres muy apasionado(a) al deporte, y tener una
+                            excusa para conectarse con las personas de tu entorno e incluso las que se encuentran lejos de ti.</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" wproject-textidth="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+                    </figure>
+                </article>
+                <article class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">Plant Control Sytem</h3>
+                        <h6 class="project-course">Django / Html / Css / MySql / Git</h6>
+                        <p class="project-date">
+                            </canvas><small><strong>Fecha:</strong> 12/02/2020</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo en:</strong> 
+                            <a href="https://plantcontrolapp.herokuapp.com" target="_blank">
+                                https://plantcontrolapp.herokuapp.com</a></small>
+                        </p>
+                        <p class="project-description">Proyecto para llevar un seguimiento en un cultivo registrando la evolución de diferentes plantas en diferentes condiciones de cultivo, así basado en datos mejoras las condiciones del mismo y sacar el mejor rendimiento posible</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" width="500" src="images/platzi-video-react-native2.png" alt="prouyecto del curso de React Native">
+                    </figure>
+                </article>
+            </div>
+        </section>
+    </div>
+
+  <div class="container">
+        <h2 class="event-list-title">Habilidades</h2>
+        <div class="event1">
+        </div>
+        <section id="experiencia" class="event-list">
+            <div class="event">
+                <img src="https://img.icons8.com/color/48/000000/python.png">
+                <img src="https://img.icons8.com/color/48/000000/django.png">
+                <img src="https://img.icons8.com/color/48/000000/mongodb.png">
+                <img src="https://img.icons8.com/color/48/000000/postgreesql.png">
+                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png">
+                <img src="https://img.icons8.com/ios-filled/50/000000/circuit.png">
+                <img height="48 px" width="48 px" src="images/arduino.png" alt="ardu">
+                <img src="https://img.icons8.com/color/48/000000/android-os.png">
+                <img src="https://img.icons8.com/ios-filled/50/000000/github.png">
+            </div>
+        </section>
+    </div> 
+
+    <div class="container"> 
+    <h2 class="event-list-title">Trabajemos Juntos</h2>
+    <div class="event1">
+    </div>
+    </div>
+
+    <section id="trabajemos" class="contact">
+        <div class="container">   
+            <div class="contact-form">         
+            <form action="#formulario-contacto" method="post" action="send.php">
+                <div class="marT">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Nombre" style="min-width: 100%">
+                </div>
+                <div class="marT">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email" style="min-width: 100%">
+                </div>
+                <div class="marT">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="Mensaje" style="min-width: 100%"></textarea>
+                </div> 
+                <div class="marT">
+                <button type="submit" name="submit" class="form-button">Enviar</button>
+                </div>
+            </form>
+            </div>
+           
+            <div class="social">
+                <a href="https://www.linkedin.com/in/diego-andres-gomez-gelvez-032b1480/" target="_blamk" class="social-link linkedin"></a>
+                <a href="https://github.com/dandresgg" target="_blank" class="social-link github"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+            </div>
+            <div>
+                <p> 
+                    <small> Develop By </small> <strong>Diego A Gomez</strong>
+                </p>
+            </div>
+        </div>
+    </footer>  
+</body> 
+
+</html>
