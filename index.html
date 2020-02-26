@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <div>
@@ -19,6 +19,7 @@
                     <img src="https://img.icons8.com/ios/50/ffffff/integrated-circuit.png">
                 </figure>
             </div>
+            <nav class="menu">
             <ol>
                 <li>
                     <a class="link-internal" href="#portafolio">Portafolio</a>
@@ -30,6 +31,7 @@
                     <a class="link-internal" href="#trabajemos">Trabajemos Juntos</a>
                 </li>
             </ol>
+            </nav>
         </div>
     </header>
   <section class="hero">
@@ -67,7 +69,7 @@
                 </article>
                 <article class="project">
                     <div class="project-text">
-                        <h3 class="project-title">Plant Control Sytem</h3>
+                        <h3 class="project-title">Plant Control System</h3>
                         <h6 class="project-course">Django / Html / Css / MySql / Git</h6>
                         <p class="project-date">
                             </canvas><small><strong>Fecha:</strong> 12/02/2020</small></p>
@@ -147,11 +149,34 @@
             </div>
             <div>
                 <p> 
-                    <small> Develop By </small> <strong>Diego A Gomez</strong>
+                    <small> Developed By </small> <strong>Diego A Gomez</strong>
                 </p>
             </div>
         </div>
-    </footer>  
+    </footer> 
+    <script>        
+        const ipad = window.matchMedia('screen and (max-width:767px)');
+        const menu = document.querySelector('.menu');
+        // console.log(menu);
+        const burgerButton = document.querySelector('#burger-menu');
+        // console.log(burgerButton);
+        ipad.addListener(validation)
+        function validation(event){
+            if (event.matches){
+                burgerButton.addEventListener('click', hideShow)
+            }else{
+                burgerButton.removeEventListener('click', hideShow)
+            }
+        }
+
+        function hideShow(){
+            if (menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }else{
+                menu.classList.add('is-active');
+            }        
+        }
+    </script> 
 </body> 
 
 </html>

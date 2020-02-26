@@ -3,6 +3,38 @@ gris claro = #626262
 background gris = #626262 
 celeste =  #026fff */
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts//icomoon.eot?d6qvxd');
+    src:  url('../fonts/icomoon.eot?d6qvxd#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?d6qvxd') format('truetype'),
+      url('../fonts/icomoon.woff?d6qvxd') format('woff'),
+      url('../fonts/icomoon.svg?d6qvxd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #f4f6fa;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
@@ -333,19 +365,31 @@ figure {
     flex-wrap: inherit;
 }
 
-.marT{
+.marT {
     margin-top: 1px;
     margin-bottom: 1px;
     width: auto;
 }
 
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(23, 74, 133, 0.6);
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    display: none;
+    z-index: 2;
+}
+
 @media screen and (max-width: 1024px){
     .container{
         padding: 0 0.5em;
-    }
-   
-    
-  
+    } 
 }
 
 @media screen and (max-width: 750px){
@@ -360,10 +404,7 @@ figure {
     }
     h1{
         font-size: 1.5em;
-        z-index: 2;
-    }
-
-  
+    }  
     .event-list-title{
         font-size: 0.8em;
     }
@@ -373,16 +414,34 @@ figure {
     }
     .header ol{
         display: initial;
+        height: auto;
     }
-    .header ol li{
+    .header li{
         height: 30px;
     }
     .header a{
         justify-content: center;
+        margin-top: 16px;
     }
     .header .logo{
         text-align: center;
     }
+    .menu{
+        position: fixed;
+        background: rgba(77, 60, 60, 0.8);
+        top: 0;
+        left: -50vw;
+        width: 50vw;
+        height: 100vh;
+        bottom: o;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .menu.is-active {
+        left: 0;
+      }
     .project{
         display: block;
         margin: 4px 0px 0px;
@@ -398,6 +457,9 @@ figure {
     .project-description{
         text-align: justify;
     }
+    .burger-button{
+        display: block;
+    }
    
 }
 
@@ -405,7 +467,6 @@ figure {
 
     h1{
         font-size: .8em;
-        z-index: 2;
     }
 
     .portfolio{
