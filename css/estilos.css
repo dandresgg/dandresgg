@@ -4,20 +4,18 @@ background gris = #626262
 celeste =  #026fff */
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts//icomoon.eot?d6qvxd');
-    src:  url('../fonts/icomoon.eot?d6qvxd#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?d6qvxd') format('truetype'),
-      url('../fonts/icomoon.woff?d6qvxd') format('woff'),
-      url('../fonts/icomoon.svg?d6qvxd#icomoon') format('svg');
+    font-family: "icomoon";
+    src: url("../fonts//icomoon.eot?d6qvxd");
+    src: url("../fonts/icomoon.eot?d6qvxd#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?d6qvxd") format("truetype"), url("../fonts/icomoon.woff?d6qvxd") format("woff"), url("../fonts/icomoon.svg?d6qvxd#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    font-family: "icomoon" !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -25,28 +23,27 @@ celeste =  #026fff */
     text-transform: none;
     line-height: 1;
     color: #f4f6fa;
-  
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-menu:before {
+}
+
+.icon-menu:before {
     content: "\e900";
-  }
+}
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     margin: 0px;
     background-color: #1b2127;
 }
 
 h2 h3 h4 {
-    font-family: 'Open Sans', Times, serif;
+    font-family: "Open Sans", Times, serif;
 }
 
 h5 h5 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
     font-weight: normal;
     /*font-style: italic;*/
 }
@@ -54,7 +51,7 @@ h5 h5 {
 h1 {
     font-size: 40px;
     line-height: 1.5;
-    letter-spacing: -.2px;
+    letter-spacing: -0.2px;
     color: white;
     margin: 0;
     /*text-transform: uppercase;
@@ -68,7 +65,7 @@ h1 strong {
 h2 {
     color: #026fff;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
@@ -117,7 +114,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.project-text{
+.project-text {
     width: 50%;
 }
 
@@ -131,7 +128,7 @@ h2 {
 .project-date,
 .project-url {
     margin: 10px 0;
-}Contai
+}
 
 .project-description {
     font-size: 15px;
@@ -140,13 +137,14 @@ h2 {
 }
 
 .project strong {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
 }
 
 .project-imageContainer {
     width: 50%;
 }
-.project-imageContainer img{
+
+.project-imageContainer img {
     max-width: 100%;
 }
 
@@ -206,6 +204,7 @@ figure {
     flex: 1;
     background-color: rgb(232, 247, 247);
 }
+
 .event {
     border: 1px solid #026fff;
     padding: 1em;
@@ -285,12 +284,9 @@ figure {
     width: inherit;
     justify-content: space-between;
 }
-.contact-form{
-    width: 50%;
-}
 
-.social {
-    /* border: 1px solid red;	 */
+.contact-form {
+    width: 50%;
 }
 
 .social-link {
@@ -303,7 +299,7 @@ figure {
 }
 
 .social-link.linkedin {
-    background-image: url('../images/linkedin.png');
+    background-image: url("../images/linkedin.png");
     /* width: 48px;
     height: 48px; */
     background-size: cover;
@@ -311,7 +307,7 @@ figure {
 }
 
 .social-link.github {
-    background-image: url('../images/github.svg');
+    background-image: url("../images/github.svg");
 }
 
 .form-email input {
@@ -319,7 +315,7 @@ figure {
     padding: 5px 20px 10px 25px;
     border-radius: 8px;
     border-style: solid;
-    background-image: url('../images/envelope.svg');
+    background-image: url("../images/envelope.svg");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -338,18 +334,17 @@ figure {
 }
 
 .form-email h3 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
-.form-button{
+.form-button {
     display: block;
-    margin-top: 5px;
     background: transparent;
     color: white;
     padding: 5px, 0;
     border-radius: 5px;
     width: 100px;
-    margin: 10px auto 0;
+    margin: 5px auto 2px;
 }
 
 .container {
@@ -386,47 +381,50 @@ figure {
     z-index: 2;
 }
 
-@media screen and (max-width: 1024px){
-    .container{
-        padding: 0 0.5em;
-    } 
+.form-control {
+    width: 190%;
 }
 
-@media screen and (max-width: 767px){
-    
-    .hero{
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
         height: auto;
         overflow: hidden;
-    } 
-    .hero-image{
+    }
+    .hero-image {
         width: 50%;
         height: 125px;
     }
-    h1{
+    h1 {
         font-size: 1.5em;
-    }  
-    .event-list-title{
+    }
+    .event-list-title {
         font-size: 0.8em;
     }
-    .header{
+    .header {
         display: block;
         height: auto;
     }
-    .header ol{
+    .header ol {
         display: initial;
         height: auto;
     }
-    .header li{
+    .header li {
         height: 30px;
     }
-    .header a{
+    .header a {
         justify-content: center;
         margin-top: 16px;
     }
-    .header .logo{
+    .header .logo {
         text-align: center;
     }
-    .menu{
+    .menu {
         position: fixed;
         background: rgba(77, 60, 60, 0.8);
         top: 0;
@@ -441,74 +439,73 @@ figure {
     }
     .menu.is-active {
         left: 0;
-      }
-    .project{
+    }
+    .project {
         display: block;
         margin: 4px 0px 0px;
     }
-    .project-imageContainer{
+    .project-imageContainer {
         width: auto;
         text-align: center;
-    }   
-    
-    .project-text{
+    }
+    .project-text {
         width: auto;
     }
-    .project-description{
+    .project-description {
         text-align: justify;
     }
-    .burger-button{
+    .burger-button {
         display: block;
     }
-   
 }
 
-@media screen and (max-width: 480px){  
-
-    h1{
-        font-size: .8em;
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 0.8em;
     }
-
-    .portfolio{
+    .portfolio {
         padding: 0.4em;
     }
-    .project{
+    .project {
         padding: 0.4em;
     }
-   .project-title{
-    font-size: 1.3em;
-   }
-   .project-url{
-    font-size: 0.8em;
-   }
-   .project-course{
-    font-size: 0.5em;
-   }
-   .project-date{
-    font-size: 0.8em;
-   }
-   .project-description{
-    font-size: 0.9em;
-   }
-   .contact{
-       display: block;
-       height: auto;
-       padding: 1em 0;
-       text-align: center;
-   }
-   .contact-form{
-       width: auto;
-       margin-bottom: 1em;
-   }
-   .footer{
-       align-items: center;
-   }
-   .footer-text{
-       text-align: center;
-   }
+    .project-title {
+        font-size: 1.3em;
+    }
+    .project-url {
+        font-size: 0.8em;
+    }
+    .project-course {
+        font-size: 0.5em;
+    }
+    .project-date {
+        font-size: 0.8em;
+    }
+    .project-description {
+        font-size: 0.9em;
+    }
+    .contact {
+        display: block;
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+    }
+    .contact-form {
+        width: auto;
+        margin-bottom: 1em;
+    }
+    .footer {
+        align-items: center;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .social {
+        margin-top: 8px;
+    }
+    .form-control {
+        width: 90%;
+    }
 }
 
-
-@media screen and (max-width: 320px){
-  
-}
+@media screen and (max-width: 320px) {}
