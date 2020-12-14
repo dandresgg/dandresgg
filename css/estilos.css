@@ -86,6 +86,8 @@ h2 {
 
 .hero-image {
     object-fit: cover;
+    border-radius: 50%;
+    border: white solid 3px;
 }
 
 .portfolio {
@@ -110,7 +112,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(232, 247, 247);
+    background-color: white;
     flex-wrap: wrap;
 }
 
@@ -506,6 +508,17 @@ figure {
     .form-control {
         width: 90%;
     }
+
+    .hero-image {
+        width: 35%;
+        height: 125px;
+    }
 }
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+
+    .hero-image {
+        width: 40%;
+        height: 125px;
+    }
+}
