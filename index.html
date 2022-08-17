@@ -6,36 +6,22 @@
     <title>Portafolio</title>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <link rel="icon" type="imag/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <div class="bg-main">
     <header class="header">
-        <div class="container">
-            <div>
-            </div>
-            <nav class="menu">
-                <ol>
-                    <li>
-                        <a class="link-internal" href="#portafolio">Portafolio</a>
-                    </li>
-                    <!-- <li>
-                    <a class="link-internal" href="#experiencia">Experiencia</a>
-                </li> -->
-                    <li>
-                        <a class="link-internal" href="#trabajemos">Trabajemos Juntos</a>
-                    </li>
-                </ol>
-            </nav>
-        </div>
     </header>
     <section class="hero">
         <div class="container">
             <h1>
-                Hola, soy <strong> Diego Gomez </strong><br> Ingeniero <strong> Electrónico
-                </strong></br> con Pasión por <strong>Aprender</strong>
+                Hola, soy <strong> Diego Gomez </strong><br> Ingeniero <strong> Electrónico,
+                </strong></br> pero me gusta <strong>Programar</strong>
             </h1>
             <img class="hero-image" src="images/hero.png" width="250" height="250" alt="Imagen hero">
         </div>
@@ -50,45 +36,105 @@
     </section>
 
     <div class="container">
-        <h2 class="event-list-title">Portafolio</h2>
+        <h2 class="event-list-title">Proyectos</h2>
         <div class="event1">
         </div>
         <section id="portafolio" class="portfolio">
             <div class="project-details">
+                
+                <article class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">Tejerre</h3>
+                        <h6 class="project-course">Django / ReactJS / PosgreSql</h6>
+                        <p class="project-date">
+                            </canvas><small><strong>Fecha:</strong> 12/06/2022</small></p>
+                        <p class="project-url">
+                            <small><strong>Puedes verlo en:</strong>
+                                <a href="https://tejerre.herokuapp.com" target="_blank">
+                                    https://tejerre.herokuapp.com
+                                </a>
+                            </small>
+                        </p>
+                        <h6 class="d-flex space-a">
+                            <a href="https://github.com/dandresgg/react-tejerre/tree/master" target="_blank">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB0ElEQVRIie3WPWtUQRTG8V8SMEE7C41JDBK1tVZBIgo2QhJBrW0sFNQirZXfQiW+oJUQMJhgI/gJbKy0E7QLRFzBl5i4Fvdec507921XUuWByzJzz3P+58zO7Cw72iYNtIidxCzO4xAm0vlP+IBlLOHj/ypuHHexgW7Ns4lnaWF9aQ5fGwDDp4OZXqG3JB20hea7v9kWOtcnNA9v3PmE4vIexzEs1IAW0riTubkOxpqAY8mHg9WYxj4MpZ+n0/lMI4H/fh10Unz3HmlScU5HA/+GreMHBgPDbNpFqP0twaPBeCjNXaqXit0utoRmWgryrFQFv4+AT/QIPhXkeVcV3ImAh6sMFdoT5OnkX4bfcTjWB3gkGP+zd0LQaiTBdI/g0BfL/Vcrikv9RrH6Ou3G2yDPiyrDfATcxSsNf30k5/V1JMd8lekg1kvg3/AAlzAV+KZwGY/wPeJdx4G6ip/kDFfwPFLAucBzBj9KCu7icR2U5OJfSw2r2IunaeLPuF3iu1MC/aJBt5ku2roWrzb0HI5AN3GhKTTTdfyW/Kc6q35nD0ag19pCM81IljefsEpZzJoeOg01hnv41QD8Ew8Vb6e+NIob2FXyfkDzs76j7dMfXTjhKzmestYAAAAASUVORK5CYII=">
+
+                                Frontend
+                            </a>
+
+                            <a href="https://github.com/dandresgg/api-tejere" target="_blank">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB0ElEQVRIie3WPWtUQRTG8V8SMEE7C41JDBK1tVZBIgo2QhJBrW0sFNQirZXfQiW+oJUQMJhgI/gJbKy0E7QLRFzBl5i4Fvdec507921XUuWByzJzz3P+58zO7Cw72iYNtIidxCzO4xAm0vlP+IBlLOHj/ypuHHexgW7Ns4lnaWF9aQ5fGwDDp4OZXqG3JB20hea7v9kWOtcnNA9v3PmE4vIexzEs1IAW0riTubkOxpqAY8mHg9WYxj4MpZ+n0/lMI4H/fh10Unz3HmlScU5HA/+GreMHBgPDbNpFqP0twaPBeCjNXaqXit0utoRmWgryrFQFv4+AT/QIPhXkeVcV3ImAh6sMFdoT5OnkX4bfcTjWB3gkGP+zd0LQaiTBdI/g0BfL/Vcrikv9RrH6Ou3G2yDPiyrDfATcxSsNf30k5/V1JMd8lekg1kvg3/AAlzAV+KZwGY/wPeJdx4G6ip/kDFfwPFLAucBzBj9KCu7icR2U5OJfSw2r2IunaeLPuF3iu1MC/aJBt5ku2roWrzb0HI5AN3GhKTTTdfyW/Kc6q35nD0ag19pCM81IljefsEpZzJoeOg01hnv41QD8Ew8Vb6e+NIob2FXyfkDzs76j7dMfXTjhKzmestYAAAAASUVORK5CYII=">
+
+                                Backend
+                            </a>
+                        </h6>
+                        <p class="project-description"> 
+                            Tienda de repuestos para máquinas de tejer. Proyecto fullstack
+                            su backend está hecho con Django y su frontend está hecho con ReactJS, la base de datos
+                            es PostgreSql.
+                        </p>
+                        <h6>Este proyecto está en una versión gratuita de Heroku, tarda un poco en cargar (10 s)</h6>
+                        </p>
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" width="500"
+                        src="https://res.cloudinary.com/hwfylyqhs/image/upload/v1660581826/others/jejerre-app_ne8wdx.png" alt="project">
+                    </figure>
+                </article>
+
                 <article class="project">
                     <div class="project-text">
                         <h3 class="project-title">Electroshopck</h3>
-                        <h6 class="project-course">Django / Html / Css / PosgreSql / Git</h6>
+                        <h6 class="project-course">Django / Html / Css / PosgreSql</h6>
                         <p class="project-date">
                             </canvas><small><strong>Fecha:</strong> 12/08/2020</small></p>
-                        <p class="project-url"><small><strong>Puedes verlo en:</strong>
+                        <p class="project-url">
+                            <small><strong>Puedes verlo en:</strong>
                                 <a href="https://eshopck.herokuapp.com" target="_blank">
-                                    https://eshopck.herokuapp.com</a></small>
-                        </p>Blog enfocado a temas de electrónica, es un complemento a una tienda para vender dispositivos electrónicos su función es ser una ayuda didáctica para quien se interese en el mundo de la electrónica, se encuentra en continua mejora para convertirse en una herramienta útil para diseñar y crear circuitos.</p>
+                                https://eshopck.herokuapp.com
+                                </a>
+                            </small>
+                        </p>
+                        <h6 class="d-flex space-a">
+                            <a href="https://github.com/dandresgg/Electrpshopck/tree/master" target="_blank">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB0ElEQVRIie3WPWtUQRTG8V8SMEE7C41JDBK1tVZBIgo2QhJBrW0sFNQirZXfQiW+oJUQMJhgI/gJbKy0E7QLRFzBl5i4Fvdec507921XUuWByzJzz3P+58zO7Cw72iYNtIidxCzO4xAm0vlP+IBlLOHj/ypuHHexgW7Ns4lnaWF9aQ5fGwDDp4OZXqG3JB20hea7v9kWOtcnNA9v3PmE4vIexzEs1IAW0riTubkOxpqAY8mHg9WYxj4MpZ+n0/lMI4H/fh10Unz3HmlScU5HA/+GreMHBgPDbNpFqP0twaPBeCjNXaqXit0utoRmWgryrFQFv4+AT/QIPhXkeVcV3ImAh6sMFdoT5OnkX4bfcTjWB3gkGP+zd0LQaiTBdI/g0BfL/Vcrikv9RrH6Ou3G2yDPiyrDfATcxSsNf30k5/V1JMd8lekg1kvg3/AAlzAV+KZwGY/wPeJdx4G6ip/kDFfwPFLAucBzBj9KCu7icR2U5OJfSw2r2IunaeLPuF3iu1MC/aJBt5ku2roWrzb0HI5AN3GhKTTTdfyW/Kc6q35nD0ag19pCM81IljefsEpZzJoeOg01hnv41QD8Ew8Vb6e+NIob2FXyfkDzs76j7dMfXTjhKzmestYAAAAASUVORK5CYII=">
+
+                                Repo
+                            </a>
+                            </h6>
+                        <p class="project-description">
+                            La idea originalmente era que fuese una tienda de componentes electrónicos, por eso el shop, pero en mi búsqueda de estos componentes, me encontré con precios de la competencia difíciles de igualar, salvo si compraba en grandes cantidades, así que cambie el enfoque para que sea más una, guía de que componente me sirve para situaciones particulares, además de un blog con temas de interés general de electrónica.
+                        </p>
+                        <h6>Este proyecto está en una versión gratuita de Heroku, tarda un poco en cargar (10 s)</h6>
+                        </p>
                     </div>
                     <figure class="project-imageContainer">
-                        <img class="project-image" width="500" src="images/eshopck.png" alt="project">
+                        <img class="project-image" width="500"
+                        src="images/eshopck.png" alt="project">
                     </figure>
                 </article>
 
                 <article class="project">
                     <div class="project-text">
                         <h3 class="project-title">Tumores del Futbol</h3>
-                        <h6 class="project-course">Django / BootStrap / PostgreSql / Python / Git / Heroku</h6>
+                        <h6 class="project-course">Django / BootStrap / PostgreSql / JavaScript</h6>
                         <p class="project-date">
                             </canvas><small><strong>Fecha:</strong> 04/02/2020</small>
                         </p>
                         <p class="project-url"><small><strong>Puedes verlo en:</strong>
-                                <a href="https://ltdf.herokuapp.com" target="_blank">
-                                    https://ltdf.herokuapp.com/ </a></small>
+                                <a href="https://www.tdf.com.co/" target="_blank">
+                                    www.tdf.com.co </a></small>
                         </p>
-                        <p class="project-description">Sitio web pensado en ser una red social orientada en hacer apuestas enfocadas en las conocidas pollas para que las personas puedan disfrutar del fútbol(u otro deporte), incluso si no eres muy apasionado(a) al deporte, y tener una
-                            excusa para conectarse con las personas de tu entorno e incluso las que se encuentran lejos de ti.</p>
-                        <p class="project-description">Usa estas credenciales para entrar como invitado</p>
-                        <p class="project-description">USUARIO: Megoz - PASSWORD: trestristestigres</p>
+                        <p class="project-description">
+                            TDF para los amigos. Se creó con la intención de hacer una competencia, está,  basada en apuestas, pero no especializadas, en vez de eso se apostó por la típica "polla" que se hace con colegas, pero en vez de ganar por partidos, acumulas puntos durante un torneo o un tiempo dado y quien más tenga puntos al final se lleva un premio, incluso puede haber varios premios, basándose en como quede el podio.
+                        </p>
+                        <p class="project-description green">Usa estas credenciales para entrar como invitado</p>
+                        <p class="project-description">USUARIO: <strong>Megoz</strong></p>
+                        <p class="project-description">PASSWORD: <strong>trestristestigres</strong> </p>
                     </div>
                     <figure class="project-imageContainer">
-                        <img class="project-image" wproject-textidth="500" src="images/tumores-app.png" alt="project">
+                        <img class="project-image" wproject-textidth="500"
+                        src="https://res.cloudinary.com/hwfylyqhs/image/upload/v1660581820/others/tumores-app_kr4f8e.png" alt="project">
                     </figure>
                 </article>
             </div>
@@ -97,25 +143,22 @@
 
     <div class="container">
         <h2 class="event-list-title">Habilidades</h2>
-        <div class="event1">
-        </div>
+        <div class="event1"></div>
         <section id="experiencia" class="event-list">
             <div class="event">
                 <img src="https://img.icons8.com/color/48/000000/python.png">
                 <img src="https://img.icons8.com/color/48/000000/django.png">
-                <img src="https://img.icons8.com/color/48/000000/mongodb.png">
                 <img src="https://img.icons8.com/color/48/000000/postgreesql.png">
-                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png">
-                <img src="https://img.icons8.com/ios-filled/50/000000/circuit.png">
-                <img height="48 px" width="48 px" src="images/arduino.png" alt="ardu">
-                <img src="https://img.icons8.com/color/48/000000/android-os.png">
-                <img src="https://img.icons8.com/ios-filled/50/000000/github.png">
+                <img src="https://img.icons8.com/office/40/000000/react.png"/>
+                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+                <img src="https://img.icons8.com/ios-filled/50/000000/git.png"/>
+                <img src="https://img.icons8.com/fluency/48/000000/docker.png"/>
             </div>
         </section>
     </div>
 
     <div class="container">
-        <h2 class="event-list-title">Trabajemos Juntos</h2>
+        <h2 class="event-list-title">Contacto</h2>
         <div class="event1">
         </div>
     </div>
@@ -135,10 +178,7 @@
                     </button>
                 </div>
             </form>
-
-
             <div class="social">
-                <a href="https://www.linkedin.com/in/diego-andres-gomez-gelvez-032b1480/" target="_blamk" class="social-link linkedin"></a>
                 <a href="https://github.com/dandresgg" target="_blank" class="social-link github"></a>
             </div>
         </section>
@@ -152,37 +192,12 @@
             </div>
             <div>
                 <p>
-                    <small> Developed By </small> <strong>Diego A Gomez</strong>
+                    <small>built By </small> <strong>Diego A Gomez</strong>
                 </p>
             </div>
         </div>
     </footer>
-    <script>
-        const ipad = window.matchMedia('screen and (max-width:767px)');
-        const menu = document.querySelector('.menu');
-        // console.log(menu);
-        const burgerButton = document.querySelector('#burger-menu');
-        // console.log(burgerButton);
-        ipad.addListener(validation)
-
-        function validation(event) {
-            if (event.matches) {
-                burgerButton.addEventListener('click', hideShow)
-            } else {
-                burgerButton.removeEventListener('click', hideShow)
-            }
-        }
-        validation(ipad);
-
-        function hideShow() {
-            if (menu.classList.contains('is-active')) {
-                menu.classList.remove('is-active');
-            } else {
-                menu.classList.add('is-active');
-            }
-        }
-    </script>
-
+    </div>
 </body>
 
 </html>
